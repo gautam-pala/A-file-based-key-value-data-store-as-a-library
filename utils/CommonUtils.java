@@ -12,17 +12,9 @@ import java.util.HashMap;
 
 import com.datastore.main.bean.Data;
 
-/**
- * @author John Britto This class Handles general util methods like validation,
- *         file operation like read,write,update
- */
 public class CommonUtils {
 
-	/**
-	 * To get the current processName
-	 * 
-	 * @return the process name as a string
-	 */
+	
 	public static String getProcessName() {
 		String processName = ManagementFactory.getRuntimeMXBean().getName();
 		return processName;
@@ -42,15 +34,7 @@ public class CommonUtils {
 		return true;
 	}
 
-	/**
-	 * To check if the given key is already available in DataStore or not
-	 * 
-	 * @param key
-	 *            The key of the element
-	 * @param filePath
-	 *            The DataStore location in laptop
-	 * @return returns true if key is already available otherwise false
-	 */
+	
 	public static boolean isKeyExists(String key, String filePath) {
 		boolean isKeyExists = false;
 		FileInputStream fileInputStream = null;
@@ -262,16 +246,6 @@ public class CommonUtils {
 		}
 	}
 
-	/**
-	 * To delete an element from the DataStore
-	 * 
-	 * @param key
-	 *            The key of the element to delete from the DataStore
-	 * @param filePath
-	 *            The location of the DataStore in laptop
-	 * @return the status of the deletion operation, true is element is deleted
-	 *         otherwise false.
-	 */
 	public static boolean deleteData(String key, String filePath) {
 
 		FileOutputStream fileOutputStream = null;
