@@ -4,15 +4,8 @@ import java.io.Serializable;
 
 import org.json.simple.JSONObject;
 
-/**
- * @author John Britto
- *
- *         The model class used to write in DataStore
- */
 public class Data implements Serializable {
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	String key;
 	int timeToLive;
