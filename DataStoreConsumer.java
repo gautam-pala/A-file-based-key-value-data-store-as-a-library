@@ -2,22 +2,13 @@ package com.datastore.main;
 
 import org.json.simple.JSONObject;
 
-/**
- * @author John Britto
- *
- */
+
 public class DataStoreConsumer {
 	public static void main(String[] args) {
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.put("firstName", "John");
 		jsonObject.put("lastName", "Britto");
 		jsonObject.put("address", "Chennai");
-		System.out
-				.println("=============================================================");
-		System.out
-				.println("========================CREATE ==============================");
-		System.out
-				.println("=============================================================");
 		// Create Operation
 		// DataStore myDataStore = new DataStore();
 		DataStore myDataStore = new DataStore(
